@@ -65,5 +65,5 @@ void AMyActor::PrintLog()
 {
 	float dist = distance(PrevPos, CurrentPos);
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("Actor CurretnPos (%lf, %lf), distance (%f)"), CurrentPos.X, CurrentPos.Y, dist));
-	UE_LOG(LogTemp, Warning, TEXT("Actor CurretnPos (%lf, %lf)"), CurrentPos.X, CurrentPos.Y, dist);
+	UE_LOG(LogTemp, Warning, TEXT("Actor CurretnPos (%lf, %lf), distance (%f)"), CurrentPos.X, CurrentPos.Y, dist);
 }
